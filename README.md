@@ -1,1 +1,1 @@
-<<Go:build web application>>的中文翻译版本
+<Go:build web applicatio>的中文翻译版本
