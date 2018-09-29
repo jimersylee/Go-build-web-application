@@ -1,10 +1,10 @@
 package main
 
 import (
-"os"
-"flag"
-"fmt"
-"runtime/pprof"
+	"flag"
+	"fmt"
+	"os"
+	"runtime/pprof"
 )
 
 const TESTLENGTH = 100000

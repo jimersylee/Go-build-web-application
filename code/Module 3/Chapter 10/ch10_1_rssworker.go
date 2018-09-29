@@ -1,9 +1,8 @@
 package main
 
-import
-(
-	"sync"
+import (
 	"fmt"
+	"sync"
 )
 
 type Fetcher struct {

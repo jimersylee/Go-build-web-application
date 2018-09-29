@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
+	"net/http"
 	"sync"
 	"time"
-	"net/http"
-	"io/ioutil"
-
 )
 
 var applicationStatus bool

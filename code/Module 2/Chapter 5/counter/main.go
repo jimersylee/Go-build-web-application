@@ -10,8 +10,6 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/bitly/go-nsq"
-	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
 

@@ -1,13 +1,11 @@
 package main
 
-import
-(
-"fmt"
-"net"
-"os"
-"bufio"
-"strings"
-
+import (
+	"bufio"
+	"fmt"
+	"net"
+	"os"
+	"strings"
 )
 
 type Message struct {

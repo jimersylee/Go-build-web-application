@@ -1,19 +1,16 @@
 package main
 
-import
-(
-	"fmt"
-	"github.com/howeyc/fsnotify"
-	"net"
-	"time"
-	"io"	
-	"io/ioutil"
-	"github.com/couchbaselabs/go-couchbase"
+import (
 	"crypto/md5"
 	"encoding/hex"
-	"encoding/json"	
+	"encoding/json"
+	"fmt"
+	"github.com/howeyc/fsnotify"
+	"io"
+	"io/ioutil"
+	"net"
 	"strings"
-	
+	"time"
 )
 
 var listenFolder = "/wamp/www/shared"

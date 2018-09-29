@@ -14,10 +14,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/bitly/go-nsq"
 	"github.com/joeshaw/envdecode"
 	"github.com/matryer/go-oauth/oauth"
-	"gopkg.in/mgo.v2"
 )
 
 var (

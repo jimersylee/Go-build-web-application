@@ -1,9 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 	"time"
-	"fmt"
 )
 
 const(
@@ -23,5 +23,6 @@ func main(){
 	http.HandleFunc("/static",serveStatic)
 	http.HandleFunc("/",serveDynamic)
 	http.ListenAndServe(PORT,nil)
+	fmt.Printf("success");
 
 }

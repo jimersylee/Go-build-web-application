@@ -1,17 +1,16 @@
 package main
 
-import
-(
-"net/http"
-"html/template"
-"time"
-"regexp"
-"fmt"
-"io/ioutil"
-"database/sql"
-"log"
-"runtime"
-_ "github.com/go-sql-driver/mysql"
+import (
+	"database/sql"
+	"fmt"
+	_ "github.com/go-sql-driver/mysql"
+	"html/template"
+	"io/ioutil"
+	"log"
+	"net/http"
+	"regexp"
+	"runtime"
+	"time"
 )
 
 const staticPath string = "static/"

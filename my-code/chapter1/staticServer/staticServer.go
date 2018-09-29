@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
+	"net/http"
 )
 
 const (
@@ -10,9 +10,11 @@ const (
 )
 
 func main() {
-	err:=http.ListenAndServe(PORT, http.FileServer(http.Dir("/home/jimersylee/projects/go/src/go-build-web-application/my-code/chapter1/staticServer")))
+	err:=http.ListenAndServe(PORT, http.FileServer(http.Dir("/home/jimersylee")))
 	if err!=nil{
 		fmt.Println("start server failed")
+	}else{
+		fmt.Println("start server successfully")
 	}
-	fmt.Println("start server successfully")
+
 }

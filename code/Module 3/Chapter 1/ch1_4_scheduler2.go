@@ -1,9 +1,8 @@
 package main
 
-import(
-	_"runtime"
+import (
 	"fmt"
-
+	_ "runtime"
 )
 
 func showNumber(num int) {

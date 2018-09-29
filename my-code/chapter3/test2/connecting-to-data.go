@@ -1,4 +1,4 @@
-package main
+package test2
 
 import (
 	"database/sql"
@@ -12,7 +12,7 @@ const(
 	DBHost="127.0.0.1"
 	DBPort=":3306"
 	DBUser="root"
-	DBPass=""
+	DBPass="root"
 	DBDbase="go"
 )
 

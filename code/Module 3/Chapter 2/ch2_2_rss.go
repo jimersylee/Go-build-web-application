@@ -1,16 +1,15 @@
 package main
 
-import(
-    "github.com/ajstarks/svgo"
-	rss "github.com/jteeuwen/go-pkg-rss"    
-	"net/http"
-	"log"
+import (
 	"fmt"
-	"strconv"
-	"time"
+	rss "github.com/jteeuwen/go-pkg-rss"
+	"log"
+	"net/http"
 	"os"
-	"sync"
 	"runtime"
+	"strconv"
+	"sync"
+	"time"
 )
 
 type Feed struct {

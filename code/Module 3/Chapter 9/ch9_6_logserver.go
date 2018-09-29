@@ -1,9 +1,8 @@
 package main
 
-import
-(
-	"net"
+import (
 	"fmt"
+	"net"
 )
 
 type Connection struct {

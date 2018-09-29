@@ -1,9 +1,8 @@
 package main
 
-import
-(
-	"fmt"
+import (
 	"code.google.com/p/gcfg"
+	"fmt"
 )
 
 type Configuration struct {

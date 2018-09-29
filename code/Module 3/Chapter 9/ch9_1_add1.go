@@ -1,10 +1,9 @@
 package main
 
-import
-(
+import (
 	"errors"
-	"reflect"
 	"log"
+	"reflect"
 )
 
 type Alpha struct {

@@ -7,7 +7,6 @@ import (
 	"time"
 
 	"github.com/stretchr/graceful"
-	"gopkg.in/mgo.v2"
 )
 
 func main() {

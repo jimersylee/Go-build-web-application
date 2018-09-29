@@ -1,13 +1,12 @@
 package main
 
-import
-(
-"fmt"
-"math/rand"
-	"runtime/pprof"
+import (
 	"flag"
+	"fmt"
+	"math/rand"
+	"os"
 	"runtime"
-	"os"	
+	"runtime/pprof"
 )
 
 var profile = flag.String("cpuprofile", "", "output pprof data to file")

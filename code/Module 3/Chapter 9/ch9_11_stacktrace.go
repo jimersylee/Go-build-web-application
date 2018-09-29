@@ -1,12 +1,11 @@
 package main
 
-import
-(
-	"os"
+import (
+	"code.google.com/p/log4go"
 	"fmt"
+	"os"
 	"runtime"
 	"strconv"
-	"code.google.com/p/log4go"	
 )
 
 

@@ -1,9 +1,8 @@
 package main
 
-import
-(
-	"strconv"
+import (
 	"fmt"
+	"strconv"
 )
 
 type Messenger interface {

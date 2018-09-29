@@ -1,12 +1,11 @@
 package main
 
-import
-(
+import (
 	"fmt"
-	"strings"
 	"net"
-	"strconv"
 	"regexp"
+	"strconv"
+	"strings"
 )
 
 var connectionCount int

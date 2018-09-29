@@ -1,12 +1,12 @@
 package main
 
-import(
+import (
 	"fmt"
-	"time"
-	"sync"
-	"runtime"
 	"math/rand"
-)	
+	"runtime"
+	"sync"
+	"time"
+)
 
 var balance int
 var transactionNo int

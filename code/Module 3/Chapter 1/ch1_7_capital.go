@@ -1,10 +1,10 @@
 package main
 
-import(
+import (
 	"fmt"
-	"sync"
 	"runtime"
 	"strings"
+	"sync"
 )
 
 var initialString string

@@ -2,9 +2,9 @@ package main
 
 import (
 	"code.google.com/p/log4go"
-	"net/http"
 	"fmt"
 	"github.com/gorilla/mux"
+	"net/http"
 )
 
 var errorLog log4go.Logger

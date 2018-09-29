@@ -1,9 +1,9 @@
 package main 
 
-import(
+import (
 	"fmt"
-	"sync"
 	"strings"
+	"sync"
 )
 
 var initialString string

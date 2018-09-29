@@ -1,20 +1,18 @@
 package main
 
-import
-(
-	"net"
-	"net/http"
-	"html/template"
-	"log"
-	"io"
-	"os"
-	"io/ioutil"
-	"github.com/couchbaselabs/go-couchbase"
-	"time"	
-	"fmt"
+import (
 	"crypto/md5"
 	"encoding/hex"
 	"encoding/json"
+	"fmt"
+	"html/template"
+	"io"
+	"io/ioutil"
+	"log"
+	"net"
+	"net/http"
+	"os"
+	"time"
 )
 
 

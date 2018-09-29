@@ -1,12 +1,12 @@
 package main
 
-import(
-	"net/http"
-	"html/template"
+import (
 	"fmt"
 	"github.com/gorilla/mux"
-	"sync"
+	"html/template"
+	"net/http"
 	"strconv"
+	"sync"
 )
 
 type User struct {

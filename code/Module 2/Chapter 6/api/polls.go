@@ -3,7 +3,6 @@ package main
 import (
 	"net/http"
 
-	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
 

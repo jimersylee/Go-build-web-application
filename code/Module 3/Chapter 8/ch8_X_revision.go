@@ -1,15 +1,14 @@
 package main
 
-import 
-(
+import (
 	"flag"
 	"fmt"
 	"os"
-	"github.com/couchbaselabs/go-couchbase"	
-	"io"	
+
 	"crypto/md5"
 	"encoding/hex"
-	"strconv"	
+	"io"
+	"strconv"
 )
 
 type File struct {

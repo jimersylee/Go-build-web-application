@@ -1,12 +1,11 @@
 package main
 
 import (
-    "github.com/ajstarks/svgo"
-    "net/http"
-    "fmt"
-    "log"
-    "time"
-    "strconv"
+	"fmt"
+	"log"
+	"net/http"
+	"strconv"
+	"time"
 )
 
 var width = 800

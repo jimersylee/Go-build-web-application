@@ -1,9 +1,7 @@
 package main
 
-import
-(
+import (
 	"fmt"
-"github.com/couchbaselabs/go-couchbase"
 )
 
 func main() {

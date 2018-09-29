@@ -1,13 +1,12 @@
 package main
 
-import
-(
+import (
+	"encoding/json"
 	"fmt"
-	"net"
 	"io"
+	"net"
 	"os"
 	"strconv"
-	"encoding/json"
 )
 
 var backupFolder = "C:\\wamp\\www\\backup\\"

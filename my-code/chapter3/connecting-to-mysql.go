@@ -4,9 +4,10 @@ import (
 	"database/sql"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/gorilla/mux"
 	"log"
 	"net/http"
-	"github.com/gorilla/mux"
+	"time"
 )
 
 
@@ -15,7 +16,7 @@ const(
 	DBHost="127.0.0.1"
 	DBPort=":3306"
 	DBUser="root"
-	DBPass=""
+	DBPass="root"
 	DBDbase="go"
 
 
@@ -41,10 +42,10 @@ func main(){
 	dbConn:=fmt.Sprintf("%s:%s@/%s",DBUser,DBPass,DBDbase)
 	db,err:=sql.Open("mysql",dbConn)
 	if err!=nil{
-		log.Println("Couldn't connect")
+		log.Println("Couldn't to mysql connect")
 		log.Println(err.Error())
 	}
-	log.Println("Connect successfully")
+	log.Println("Connect to mysql successfully")
 	database=db
 
 	//设置路由
@@ -60,7 +61,7 @@ func ServePage(w http.ResponseWriter,r *http.Request){
 	pageID:=vars["id"]
 	pageGUID:=vars["guid"]
 	thisPage:=Page{}
-	fmt.Println("pageID:"+pageID,"guid:"+pageGUID)
+	fmt.Println("pageID:"+pageID,"guid:"+pageGUID,"time:"+time.Now().String());
 	err:=database.QueryRow("select page_title,page_content,page_date from pages where page_guid=?",pageGUID).Scan(&thisPage.Title,&thisPage.Content,&thisPage.Date)
 	if err!=nil{
 		http.Error(w,http.StatusText(404),http.StatusNotFound)
@@ -68,10 +69,10 @@ func ServePage(w http.ResponseWriter,r *http.Request){
 		log.Println(err.Error())
 		return
 	}
-
+	fmt.Println("time:"+time.Now().String());
 	html:=`<html><head><title>` + thisPage.Title +
 `</title></head><body><h1>` + thisPage.Title + `</h1><div>` +
-thisPage.Content + `</div></body></html>`
+thisPage.Content +`</div></body></html>`
 	fmt.Fprintln(w,html)
 }
 

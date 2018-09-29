@@ -3,7 +3,6 @@ package main_test
 import (
 	"testing"
 
-	"github.com/matryer/goblueprints/chapter6/api"
 	"github.com/stretchr/testify/require"
 )
 

@@ -1,10 +1,9 @@
 package main
 
 
-import
-(
-	"os"
+import (
 	"fmt"
+	"os"
 	"strconv"
 )
 

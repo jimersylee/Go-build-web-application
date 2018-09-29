@@ -1,15 +1,13 @@
 package main
 
-import
-(
-	"github.com/couchbaselabs/go-couchbase"
-	"io"	
-	"time"
-	"fmt"
-	"os"
-	"net/http"
+import (
 	"crypto/md5"
-	"encoding/hex"	
+	"encoding/hex"
+	"fmt"
+	"io"
+	"net/http"
+	"os"
+	"time"
 )
 type LogItem struct {
 	ServerID string "json:server_id"
